@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ButtonsContainer from './components/buttonsContainer';
+import ButtonsContainer from './components/buttons/buttonsContainer';
 import MoviesContextProvider from './contexts/moviesContext';
 
 const App = (): JSX.Element => {

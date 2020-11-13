@@ -5,9 +5,9 @@ import moviesReducer from '../reducers/moviesReducer';
 export const MoviesContext = createContext<undefined | MoviesContextType>(undefined);
 
 const MoviesContextProvider = ({ children }: { children: ReactNode }) => {
-  const [moviesState, dispatch] = useReducer(moviesReducer, { movies: [], lastId: null });
+  const [moviesState, dispatch] = useReducer(moviesReducer, { movies: [], currentId: null, isMatch: false });
 
-  useEffect(() => {
+  const fetchData = (): Promise<any> =>
     fetch('./movies.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -16,6 +16,9 @@ const MoviesContextProvider = ({ children }: { children: ReactNode }) => {
     })
       .then((data) => data.json())
       .then((moviesArray) => dispatch({ type: 'SET_MOVIES', payload: moviesArray }));
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return <MoviesContext.Provider value={{ moviesState, dispatch }}>{children}</MoviesContext.Provider>;
