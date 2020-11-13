@@ -1,6 +1,6 @@
-import { Movie } from './movie';
+import { MoviesState } from './moviesReducerStateInterface';
 
 export interface MoviesContextType {
-  movies: Movie[];
+  moviesState: MoviesState;
   dispatch: React.Dispatch<any>;
 }

@@ -1,11 +1,13 @@
-import { Movie } from '../interfaces/movie';
+import { MoviesState } from '../interfaces/moviesReducerStateInterface';
 import { ACTIONTYPE } from './moviesActions';
 
-const moviesReducer = (state: Movie[], action: ACTIONTYPE) => {
+const moviesReducer = (state: MoviesState, action: ACTIONTYPE): MoviesState => {
   switch (action.type) {
     case 'SET_MOVIES':
-      console.log(action.payload);
-      return [...action.payload];
+      return {
+        movies: [...action.payload],
+        lastId: action.payload[0].id,
+      };
     default:
       return state;
   }
