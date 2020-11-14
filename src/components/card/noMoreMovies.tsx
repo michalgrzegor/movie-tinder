@@ -10,7 +10,7 @@ const NoMoreMovies: React.FC = () => {
   return (
     <div className="noMoreMovies">
       <h1>no more movies to display</h1>
-      <button onClick={() => dispatch({ type: 'NEXT_MOVIE' })} type="button">
+      <button onClick={() => dispatch({ type: 'RESET_MOVIES' })} type="button">
         Search again
       </button>
     </div>

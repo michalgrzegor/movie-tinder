@@ -23,6 +23,13 @@ const moviesReducer = (state: MoviesState, action: ACTIONTYPE): MoviesState => {
         ...state,
         isMatch: true,
       };
+    case 'RESET_MOVIES':
+      return {
+        ...state,
+        currentId: state.movies[0].id,
+        isMatch: false,
+        noMoreMovies: false,
+      };
     default:
       return state;
   }
