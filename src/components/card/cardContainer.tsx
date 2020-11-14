@@ -8,27 +8,22 @@ import NoMoreMovies from './noMoreMovies';
 import './card.css';
 
 const CardContainer: React.FC = () => {
-  const { moviesState } = useContext(MoviesContext) as MoviesContextInterface;
+  const {
+    moviesState: { displayElement },
+  } = useContext(MoviesContext) as MoviesContextInterface;
 
-  if (moviesState.isMatch) {
-    return (
-      <div className="card__container">
-        <Match />
-      </div>
-    );
-  }
-  if (moviesState.noMoreMovies) {
-    return (
-      <div className="card__container">
-        <NoMoreMovies />
-      </div>
-    );
-  }
-  return (
-    <div className="card__container">
-      <Card />
-    </div>
-  );
+  const getElement = (): JSX.Element => {
+    switch (displayElement) {
+      case 'noMoreMovies':
+        return <NoMoreMovies />;
+      case 'match':
+        return <Match />;
+      default:
+        return <Card />;
+    }
+  };
+
+  return <div className="card__container">{getElement()}</div>;
 };
 
 export default CardContainer;

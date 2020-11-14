@@ -7,12 +7,12 @@ import './buttons.css';
 
 const ButtonsContainer: React.FC = () => {
   const {
-    moviesState: { noMoreMovies, isMatch },
+    moviesState: { displayElement },
   } = useContext(MoviesContext) as MoviesContextInterface;
 
   return (
     <div className="btnContainer">
-      {!noMoreMovies && !isMatch && (
+      {displayElement === 'card' && (
         <div>
           <Button btnType="like" />
           <Button btnType="dislike" />

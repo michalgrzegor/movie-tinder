@@ -8,8 +8,7 @@ const MoviesContextProvider: React.FC<{ children: ReactNode }> = ({ children }: 
   const [moviesState, dispatch] = useReducer(moviesReducer, {
     movies: [],
     currentId: null,
-    isMatch: false,
-    noMoreMovies: false,
+    displayElement: 'card',
   });
 
   const fetchData = (): Promise<void> =>
