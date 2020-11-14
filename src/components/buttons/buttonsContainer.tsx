@@ -1,7 +1,9 @@
 import React from 'react';
 import Button from './button';
 
-const ButtonsContainer = () => {
+import './buttons.css';
+
+const ButtonsContainer: React.FC = () => {
   return (
     <div className="btnContainer">
       <Button btnType="like" />

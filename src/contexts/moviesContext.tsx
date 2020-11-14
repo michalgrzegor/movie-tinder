@@ -1,13 +1,18 @@
 import React, { createContext, useReducer, useEffect, ReactNode } from 'react';
-import { MoviesContextType } from '../interfaces/moviesContextInterface';
+import { MoviesContextInterface } from '../interfaces/moviesContextInterface';
 import moviesReducer from '../reducers/moviesReducer';
 
-export const MoviesContext = createContext<undefined | MoviesContextType>(undefined);
+export const MoviesContext = createContext<undefined | MoviesContextInterface>(undefined);
 
-const MoviesContextProvider = ({ children }: { children: ReactNode }) => {
-  const [moviesState, dispatch] = useReducer(moviesReducer, { movies: [], currentId: null, isMatch: false });
+const MoviesContextProvider: React.FC<{ children: ReactNode }> = ({ children }: { children: ReactNode }) => {
+  const [moviesState, dispatch] = useReducer(moviesReducer, {
+    movies: [],
+    currentId: null,
+    isMatch: false,
+    noMoreMovies: false,
+  });
 
-  const fetchData = (): Promise<any> =>
+  const fetchData = (): Promise<void> =>
     fetch('./movies.json', {
       headers: {
         'Content-Type': 'application/json',

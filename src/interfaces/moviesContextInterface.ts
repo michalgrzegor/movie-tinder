@@ -1,6 +1,7 @@
+import { ACTIONTYPE } from '../reducers/moviesActions';
 import { MoviesState } from './moviesReducerStateInterface';
 
-export interface MoviesContextType {
+export interface MoviesContextInterface {
   moviesState: MoviesState;
-  dispatch: React.Dispatch<any>;
+  dispatch: React.Dispatch<ACTIONTYPE>;
 }

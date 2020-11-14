@@ -4,13 +4,15 @@ import ButtonsContainer from './components/buttons/buttonsContainer';
 import CardContainer from './components/card/cardContainer';
 import MoviesContextProvider from './contexts/moviesContext';
 
-const App = (): JSX.Element => {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <MoviesContextProvider>
-        <CardContainer />
-        <ButtonsContainer />
-      </MoviesContextProvider>
+      <div className="App__content">
+        <MoviesContextProvider>
+          <CardContainer />
+          <ButtonsContainer />
+        </MoviesContextProvider>
+      </div>
     </div>
   );
 };

@@ -16,6 +16,7 @@ const moviesReducer = (state: MoviesState, action: ACTIONTYPE): MoviesState => {
           state.movies[state.movies.length - 1].id === state.currentId
             ? null
             : state.movies[state.movies.findIndex((m) => m.id === state.currentId) + 1].id,
+        noMoreMovies: state.movies[state.movies.length - 1].id === state.currentId,
       };
     case 'SET_MATCH':
       return {

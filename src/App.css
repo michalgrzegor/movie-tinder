@@ -1,1 +1,13 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.App__content {
+  max-width: 360px;
+  max-height: 796px;
+  width: 100%;
+}

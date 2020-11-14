@@ -1,0 +1,21 @@
+.match {
+  box-sizing: border-box;
+  text-align: center;
+  height: 600px;
+  padding: 124px 0;
+}
+
+.match h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: #3cdb9a;
+}
+
+.match img {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #3cdb9a;
+}

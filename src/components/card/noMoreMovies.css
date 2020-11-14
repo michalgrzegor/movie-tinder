@@ -1,0 +1,42 @@
+.noMoreMovies {
+  box-sizing: border-box;
+  text-align: center;
+  height: 600px;
+  padding: 124px 12px;
+}
+
+.noMoreMovies h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: #ff6b6b;
+}
+
+.noMoreMovies button {
+  background: none;
+  border: none;
+  width: 248px;
+  height: 48px;
+  margin-top: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.noMoreMovies button:hover {
+  -webkit-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+}
+
+.noMoreMovies button:active {
+  -webkit-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  border: none;
+}
+
+.noMoreMovies button:focus {
+  border: none;
+  outline: none;
+}

@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
 import { MoviesContext } from '../../contexts/moviesContext';
-import { MoviesContextType } from '../../interfaces/moviesContextInterface';
+import { MoviesContextInterface } from '../../interfaces/moviesContextInterface';
 
-const Card = () => {
-  const { moviesState } = useContext(MoviesContext) as MoviesContextType;
-  const movie = moviesState.movies.find((m) => m.id === moviesState.currentId);
+const Card: React.FC = () => {
+  const {
+    moviesState: { movies, currentId },
+  } = useContext(MoviesContext) as MoviesContextInterface;
+  const movie = movies.find((m) => m.id === currentId);
+
   return (
     <div className="card">
       <div className="card__img">

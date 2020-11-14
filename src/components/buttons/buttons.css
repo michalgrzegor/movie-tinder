@@ -1,0 +1,37 @@
+.btnContainer {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer button {
+  width: 48px;
+  height: 48px;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 24px;
+}
+
+.btnContainer button:hover {
+  -webkit-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+}
+
+.btnContainer button:active {
+  -webkit-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  border: none;
+}
+
+.btnContainer button:focus {
+  border: none;
+  outline: none;
+}
