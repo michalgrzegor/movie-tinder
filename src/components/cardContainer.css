@@ -1,18 +1,13 @@
-.noMoreMovies {
-  box-sizing: border-box;
-  text-align: center;
-  height: 600px;
-  padding: 124px 12px;
+.card__container {
+  height: 796px;
 }
 
-.noMoreMovies h1 {
-  margin: 0;
-  font-size: 48px;
-  font-family: 'Pacifico', cursive;
-  color: #ff6b6b;
+.container-shadow {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.36);
 }
 
-.noMoreMovies button {
+.btn-again {
   background: none;
   border: none;
   width: 248px;
@@ -23,20 +18,30 @@
   cursor: pointer;
 }
 
-.noMoreMovies button:hover {
+.btn-again:hover {
   -webkit-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
   box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
 }
 
-.noMoreMovies button:active {
+.btn-again:active {
   -webkit-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
   box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
   border: none;
 }
 
-.noMoreMovies button:focus {
+.btn-again:focus {
   border: none;
   outline: none;
+}
+
+@media (max-width: 415px) {
+  .card__container {
+    height: 100vh;
+  }
+  .container-shadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }

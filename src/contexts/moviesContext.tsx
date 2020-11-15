@@ -7,8 +7,6 @@ export const MoviesContext = createContext<undefined | MoviesContextInterface>(u
 const MoviesContextProvider: React.FC<{ children: ReactNode }> = ({ children }: { children: ReactNode }) => {
   const [moviesState, dispatch] = useReducer(moviesReducer, {
     movies: [],
-    currentId: null,
-    displayElement: 'card',
   });
 
   const fetchData = (): Promise<void> =>

@@ -1,0 +1,13 @@
+.noMoreMovies {
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+  padding: 124px 12px;
+}
+
+.noMoreMovies h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: #ff6b6b;
+}

@@ -1,19 +1,29 @@
 import React from 'react';
-import './App.css';
-import ButtonsContainer from './components/buttons/buttonsContainer';
-import CardContainer from './components/card/cardContainer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import WelcomeComponent from './components/welcomeComponent';
 import MoviesContextProvider from './contexts/moviesContext';
+import CardContainer from './components/cardContainer';
+
+import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <div className="App__content">
-        <MoviesContextProvider>
-          <CardContainer />
-          <ButtonsContainer />
-        </MoviesContextProvider>
-      </div>
-    </div>
+    <Router>
+      <MoviesContextProvider>
+        <div className="App">
+          <div className="App__content">
+            <Switch>
+              <Route path="/recommendations">
+                <CardContainer />
+              </Route>
+              <Route path="/">
+                <WelcomeComponent />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </MoviesContextProvider>
+    </Router>
   );
 };
 

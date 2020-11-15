@@ -1,0 +1,50 @@
+.welcomeScreen {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeScreen h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+.welcomeScreen button {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.welcomeScreen button:hover {
+  -webkit-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.26);
+}
+
+.welcomeScreen button:active {
+  -webkit-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0rem 1.2rem 0.2rem rgba(0, 0, 0, 0.26);
+  border: none;
+}
+
+.welcomeScreen button:focus {
+  border: none;
+  outline: none;
+}

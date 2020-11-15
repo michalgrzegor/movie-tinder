@@ -1,16 +1,8 @@
-.btnContainer {
-  width: 100%;
-  height: 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .btnContainer button {
   width: 48px;
   height: 48px;
   outline: none;
-  background: none;
+  background: #fafafa;
   border: none;
   border-radius: 50%;
   cursor: pointer;
