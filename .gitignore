@@ -23,5 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # keys
-/gh-pages-actions
 /gh-pages-actions.pub
