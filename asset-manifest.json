@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/movie-tinder/static/css/main.27a8786b.chunk.css",
+    "main.js": "/movie-tinder/static/js/main.23431dbf.chunk.js",
+    "main.js.map": "/movie-tinder/static/js/main.23431dbf.chunk.js.map",
+    "runtime-main.js": "/movie-tinder/static/js/runtime-main.8e73b56a.js",
+    "runtime-main.js.map": "/movie-tinder/static/js/runtime-main.8e73b56a.js.map",
+    "static/js/2.e0a42d0e.chunk.js": "/movie-tinder/static/js/2.e0a42d0e.chunk.js",
+    "static/js/2.e0a42d0e.chunk.js.map": "/movie-tinder/static/js/2.e0a42d0e.chunk.js.map",
+    "static/js/3.f50e8f4d.chunk.js": "/movie-tinder/static/js/3.f50e8f4d.chunk.js",
+    "static/js/3.f50e8f4d.chunk.js.map": "/movie-tinder/static/js/3.f50e8f4d.chunk.js.map",
+    "index.html": "/movie-tinder/index.html",
+    "static/css/main.27a8786b.chunk.css.map": "/movie-tinder/static/css/main.27a8786b.chunk.css.map",
+    "static/js/2.e0a42d0e.chunk.js.LICENSE.txt": "/movie-tinder/static/js/2.e0a42d0e.chunk.js.LICENSE.txt",
+    "static/media/dislikeIcon.662428e6.svg": "/movie-tinder/static/media/dislikeIcon.662428e6.svg",
+    "static/media/likeIcon.565d8b1f.svg": "/movie-tinder/static/media/likeIcon.565d8b1f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e73b56a.js",
+    "static/js/2.e0a42d0e.chunk.js",
+    "static/css/main.27a8786b.chunk.css",
+    "static/js/main.23431dbf.chunk.js"
+  ]
+}
