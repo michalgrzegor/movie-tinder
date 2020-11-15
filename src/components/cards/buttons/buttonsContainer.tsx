@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from './button';
+import ButtonDislike from './buttonDislike';
+import ButtonLike from './buttonLike';
 
 import './buttonsContainer.css';
 
@@ -7,8 +8,8 @@ const ButtonsContainer: React.FC = () => {
   return (
     <div className="btnContainer">
       <div>
-        <Button btnType="like" />
-        <Button btnType="dislike" />
+        <ButtonLike />
+        <ButtonDislike />
       </div>
     </div>
   );
