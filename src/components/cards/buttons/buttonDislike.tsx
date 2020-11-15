@@ -18,6 +18,12 @@ const ButtonDislike: React.FC = () => {
   const getNextParam = () =>
     movies[movies.length - 1].id === id ? 'noMoreMovies' : movies[movies.findIndex((m) => m.id === id) + 1].id;
 
+  // const sendReject = () => {
+  //   fetch(`${URL}/recommendations/${URL}/reject`, { method: 'PUT' })
+  //     .then( change route )
+  //     .catch( display error );
+  // };
+
   return (
     <button type="button" onClick={() => history.push(`/recommendations/${getNextParam()}`)}>
       <img src={dislikeIcon} alt="button icon" />

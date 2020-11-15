@@ -36,6 +36,12 @@
   outline: none;
 }
 
+.error__message {
+  width: 100%;
+  text-align: center;
+  margin-top: 96px;
+}
+
 @media (max-width: 415px) {
   .card__container {
     height: 100vh;
